@@ -7,47 +7,55 @@ import Net from "./Net_Ball.webp";
 import Premier from "./Premier_Ball.webp";
 import Ultra from "./Ultra_Ball.webp";
 
-let Pokeballs = [
+let pbArr = [
   {
+    id: "great",
     name: "Great Ball",
     img: Great,
     cost: 300
   },
   {
+    id: "ultra",
     name: "Ultra Ball",
     img: Ultra,
     cost: 500
   },
   {
+    id: "premier",
     name: "Premier Ball",
     img: Premier,
     cost: 700
   },
   {
+    id: "luxury",
     name: "Luxury Ball",
     img: Luxury,
     cost: 1000
   },
   {
+    id: "master",
     name: "Master Ball",
     img: Master,
     cost: 9999999
   },
   {
+    id: "dive",
     name: "Dive Ball",
     img: Dive,
     cost: 400
   },
   {
+    id: "nest",
     name: "Nest Ball",
     img: Nest,
     cost: 400
   },
   {
+    id: "net",
     name: "Net Ball",
     img: Net,
     cost: 400
   }
 ]
 
-export default Pokeballs;
+export default pbArr;
