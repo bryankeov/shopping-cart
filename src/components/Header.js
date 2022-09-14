@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+export default function Header() {
   return (
-    <div>
+    <div className="header-container">
       <h1>Pokemart</h1>
       <p>Buy all your pokemon needs here!</p>
       <ul>
         <Link to={"/"}>
-          <li>Home</li>
+          <li>HOME</li>
         </Link>
         <Link to={"/shop"}>
-          <li>Shop</li>
+          <li>SHOP</li>
         </Link>
       </ul>
     </div>

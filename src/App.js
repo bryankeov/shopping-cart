@@ -1,16 +1,16 @@
-import React, {useState, useEffect} from "react";
-import Nav from "./components/Nav";
+import React, {useState} from "react";
+import Header from "./components/Header";
+import "./styles/App.css"
 
 export default function App() {
-  const {shopCart, setShopCart} = useState(0);
-
-
   return (
     <div>
-      <Nav/>
-      <h1>Welcome!</h1>
-      <p>We pride ourselves for selling the most authentic pokeballs available.</p>
-      <p>You wont find better pokeballs elsewhere.</p>
+      <Header/>
+      <div className="about">
+        <h2>Welcome!</h2>
+        <p>We pride ourselves for selling the most authentic pokeballs available.</p>
+        <p>You wont find better pokeballs elsewhere.</p>
+      </div>
     </div>
   )
 }

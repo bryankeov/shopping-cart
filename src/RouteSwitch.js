@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import App from "./App";
+import Cart from "./components/Cart";
 import Shop from "./Shop";
 
 const RouteSwitch = () => {
