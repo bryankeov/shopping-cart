@@ -8,7 +8,7 @@ export default function Shop() {
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0)
 
-  function getTotal() {
+  function getTotal(items) {
     let itemTotal = Number();
 
     items.map((i) => (
@@ -29,7 +29,7 @@ export default function Shop() {
       newItems[itemIndex].qty = Number(newItems[itemIndex].qty) + Number(pokeball.qty);
       newItems[itemIndex].cost = pokeball.cost
     }
-    getTotal();
+    getTotal(newItems);
     setItems(newItems);
   }
 
